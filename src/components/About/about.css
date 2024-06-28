@@ -1,0 +1,29 @@
+.about {
+  flex-direction: column;
+  gap: var(--gap-about);
+}
+
+.about__name {
+  color: var(--clr-primary);
+}
+
+.about__desc {
+  font-size: var(--fs-regular);
+  max-width: var(--max-description-width);
+}
+
+.about__contact {
+  display: grid;
+  gap: var(--gap-button);
+}
+
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: var(--margin-extra-large);
+  }
+
+  .about__name {
+    display: block;
+  }
+}
